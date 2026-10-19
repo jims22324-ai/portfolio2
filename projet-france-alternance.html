@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France Alternance | Jimmy Truong</title>
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Inter:wght@200;400&display=swap" rel="stylesheet">
+
+    <style>
+        /* Unification de l'espacement global entre les sections */
+        .huge-mockups-layout {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 60px !important;
+        }
+
+        .huge-mockup-row {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+            display: flex;
+            align-items: center;
+        }
+
+        .huge-mockup-item {
+            background-color: transparent !important;
+            background: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            width: 100%;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+
+        .huge-mockup-item > a, 
+        .huge-mockup-item > div {
+            width: 100%;
+            max-width: 100%;
+            background-color: transparent !important;
+        }
+
+        .huge-mockup-item img {
+            width: 100% !important;
+            height: auto !important;
+            display: block;
+            border-radius: 12px;
+        }
+
+        /* Styles pour l'animation de fondu au défilement */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, transform;
+        }
+
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="project-detail-page">
+
+    <a href="index.html#projets" class="close-project">
+        <span class="close-icon">✕</span>
+        <span class="close-text">Fermer</span>
+    </a>
+
+    <nav>
+        <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">JIMMY TRUONG</a></div>
+    </nav>
+
+    <main>
+        <!-- 1. GRANDE BANNIÈRE VIDÉO EN HAUT DE PAGE -->
+        <section class="hero-video-banner">
+            <div class="banner-video-container" style="width: 100vw; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%);">
+                <video src="francealternance-banniere.mp4" autoplay loop muted playsinline style="width: 100%; height: auto; max-height: 90vh; object-fit: cover; display: block;"></video>
+            </div>
+        </section>
+
+        <!-- 2. EN-TÊTE MINIMALISTE HARMONISÉ -->
+        <header class="project-header-minimalist fade-in-section">
+            <div class="header-content">
+                <span class="subtitle">UX/UI Designer</span>
+                <h1>France Alternance</h1>
+                <p class="project-intro">Refonte complète de l’interface utilisateur de France Alternance.</p>
+                <a href="https://www.figma.com/design/vfH4WvCixM8sUHEutpRJnG/Major-et-France-Alternance-Maquette?node-id=0-1&t=XznO5EZp6yzg66nd-1" target="_blank" class="figma-btn">Consulter la Maquette Figma ↗</a>
+            </div>
+        </header>
+
+        <!-- 3. SECTION STRATÉGIE / CONCEPT -->
+        <section class="project-showcase-section full-width-mockups fade-in-section" style="padding-top: 40px !important;">
+            <div class="huge-mockups-layout">
+                <div class="huge-mockup-row reversed">
+                    <div class="huge-mockup-item">
+                        <img src="2_Mockup_FranceAlternance.png" alt="Page d'accueil France Alternance">
+                    </div>
+                    <div class="huge-mockup-desc">
+                        <span>01. Présentation</span>
+                        <h3>Bienvenue chez France Alternance !</h3>
+                        <p>Présentation de la landing page de France Alternance, une plateforme permettant aux étudiants de Major Formation de trouver une alternance grâce à un réseau de partenaires.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+        <section class="project-showcase-section full-width-mockups fade-in-section" style="padding-top: 40px !important;">
+            <div class="huge-mockups-layout">
+                <!-- Mockup 2 : Image à GAUCHE -->
+                <div class="huge-mockup-row">
+                    <div class="huge-mockup-item">
+                        <a href="3_Mockup_FranceAlternance.png">
+                            <img src="3_Mockup_FranceAlternance.png" alt="Aperçu France Alternance 2">
+                        </a>
+                    </div>
+                    <div class="huge-mockup-desc">
+                        <span>02 / Choix des couleurs </span>
+                        <h3>Une palette douce et rassurante</h3>
+                        <p>La palette de couleurs de France Alternance repose sur des tons pastel : rose, jaune, bleu et vert. Ces teintes douces ont été choisies pour transmettre un sentiment de confiance et de sérénité auprès des parents et des étudiants.</p>
+                    </div>
+                </div>
+
+                <!-- Mockup 3 : Image à DROITE (inversé) -->
+                <div class="huge-mockup-row reversed">
+                    <div class="huge-mockup-item">
+                        <a href="4_Mockup_FranceAlternance.png">
+                            <img src="4_Mockup_FranceAlternance.png" alt="Aperçu France Alternance 3">
+                        </a>
+                    </div>
+                    <div class="huge-mockup-desc">
+                        <span>03 / Le programme « 1 jeune, 1 alternance »</span>
+                        <h3>Page Étudiant</h3>
+                        <p>Cette page présente le programme « 1 jeune, 1 alternance » du point de vue des étudiants, en expliquant les démarches à suivre et les conditions pour trouver une alternance grâce à ce dispositif.</p>
+                    </div>
+                </div>
+
+                <!-- Mockup 4 : Image à GAUCHE -->
+                <div class="huge-mockup-row">
+                    <div class="huge-mockup-item">
+                        <a href="5_Mockup_FranceAlternance.png">
+                            <img src="5_Mockup_FranceAlternance.png" alt="Aperçu France Alternance 4">
+                        </a>
+                    </div>
+                    <div class="huge-mockup-desc">
+                        <span>04 / Le programme « 1 jeune, 1 alternance »</span>
+                        <h3>Page Entreprise</h3>
+                        <p>Cette page présente le programme « 1 jeune, 1 alternance » du point de vue des entreprises, en expliquant les modalités de recrutement d’un alternant et les dispositifs d’accompagnement disponibles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-footer fade-in-section">
+            <div class="footer-info">
+                <h3>Rôle</h3>
+                <p>UX/UI Design</p>
+            </div>
+            <div class="footer-info">
+                <h3>Cible</h3>
+                <p>Étudiants et Seniors</p>
+            </div>
+        </section>
+
+        <div class="project-divider"></div>
+    </main>
+
+    <footer class="fade-in-section">
+        <div class="footer-main">
+            <div class="footer-left">
+                <span class="subtitle" style="color: var(--gray);">Disponible pour septembre 2026</span>
+                <h2>Me contacter</h2>
+                <p class="footer-desc">
+                    Mon rythme est de 4 jours en entreprise et 1 jour à l’école.
+                </p>
+            </div>
+
+            <div class="footer-right">
+                <div class="contact-cards">
+                    <a href="jimmy-truong-CV.pdf" download="CV_Jimmy_Truong.pdf" target="_blank" class="contact-card cv-card">
+                        <div class="card-frame"><img src="cv-icon.png" alt="CV"></div>
+                        <div class="card-info">
+                            <h4>Mon CV</h4>
+                            <span>Télécharger (PDF)</span>
+                        </div>
+                    </a>
+
+                    <a href="tel:+33752075204" class="contact-card phone-card">
+                        <div class="card-frame"><img src="phone-icon.png" alt="Tél"></div>
+                        <div class="card-info">
+                            <h4>07 52 07 52 04</h4>
+                            <span>Appel / SMS</span>
+                        </div>
+                    </a>
+
+                    <a href="mailto:jimmytruong.contact@gmail.com" class="contact-card email-card">
+                        <div class="card-frame"><img src="email-icon.png" alt="Email"></div>
+                        <div class="card-info">
+                            <h4>Email</h4>
+                            <span>jimmytruong.contact@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/jimmy-truong-983167297/" target="_blank" class="contact-card linkedin-card">
+                        <div class="card-frame"><img src="linkedin.png" alt="LinkedIn"></div>
+                        <div class="card-info">
+                            <h4>LinkedIn</h4>
+                            <span>Réseau Professionnel</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Jimmy Truong • jimmytruong.contact@gmail.com</p>
+        </div>
+    </footer>
+
+    <script>
+        // Animation de fondu au défilement (Intersection Observer)
+        document.addEventListener("DOMContentLoaded", function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in-section').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
